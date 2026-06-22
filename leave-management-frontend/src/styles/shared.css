@@ -1,0 +1,123 @@
+.page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+}
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+.btn-lg {
+  padding: 13px 24px;
+  font-size: 15px;
+}
+
+.btn-ghost-light {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.btn-ghost-light:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.btn-ghost:hover {
+  background: var(--color-neutral-soft);
+  color: var(--color-text);
+}
+
+.btn-success {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+.btn-success:hover {
+  background: var(--color-success);
+  color: white;
+}
+
+.btn-danger {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+.btn-danger:hover {
+  background: var(--color-danger);
+  color: white;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.badge-PENDING { background: var(--color-warning-soft); color: var(--color-warning); }
+.badge-APPROVED { background: var(--color-success-soft); color: var(--color-success); }
+.badge-REJECTED { background: var(--color-danger-soft); color: var(--color-danger); }
+.badge-CANCELLED { background: var(--color-neutral-soft); color: var(--color-neutral); }
+
+.error-text {
+  color: var(--color-danger);
+  font-size: 13px;
+}
+
+.empty-state {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  padding: 24px 0;
+  text-align: center;
+}

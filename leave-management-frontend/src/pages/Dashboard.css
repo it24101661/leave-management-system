@@ -1,0 +1,120 @@
+.dashboard-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.dashboard-header h1 {
+  font-size: 24px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.balance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.balance-tile {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  text-align: center;
+}
+
+.balance-tile-type {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-secondary);
+}
+
+.balance-tile-remaining {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 4px 0 2px;
+}
+
+.balance-tile-detail {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.data-table {
+  font-size: 14px;
+}
+
+.data-table th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-secondary);
+  padding: 0 12px 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.data-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.calendar-table {
+  font-size: 13px;
+}
+
+.calendar-table th {
+  padding: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.calendar-cell {
+  vertical-align: top;
+  border: 1px solid var(--color-border);
+  padding: 6px;
+  min-width: 100px;
+  height: 64px;
+}
+
+.calendar-day-number {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
+
+.calendar-tag {
+  font-size: 10px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
